@@ -1,0 +1,37 @@
+{
+  "DevContainersInfoBarHidden": true,
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\Linux_os_build",
+      "out\\install\\Linux_os_build"
+    ],
+    "WSL: Ubuntu": [
+      "out\\Ubuntu\\build\\linux-debug",
+      "out\\Ubuntu\\install\\linux-debug"
+    ],
+    "WSL: Ubuntu-24.04": [
+      "out\\Ubuntu-24.04\\build\\linux-debug",
+      "out\\Ubuntu-24.04\\install\\linux-debug"
+    ]
+  },
+  "ActiveTargetSystem": "WSL: Ubuntu-24.04",
+  "MRUPresetsPerTargetSystem": {
+    "Local Machine": {
+      "configure": "Linux_os_build"
+    },
+    "WSL: Ubuntu-24.04": {
+      "configure": "linux-debug"
+    }
+  },
+  "ExpandedNodes": [
+    "",
+    "\\out",
+    "\\x64",
+    "\\x86",
+    "\\x86\\library",
+    "\\x86\\library\\MYOS",
+    "\\x86\\library\\MYOS\\Header",
+    "\\x86\\library\\MYOS\\Source"
+  ],
+  "PreviewInSolutionExplorer": false
+}

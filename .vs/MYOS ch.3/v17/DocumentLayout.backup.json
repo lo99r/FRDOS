@@ -1,0 +1,811 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fdfs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\fdfs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\commands.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\main x86.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\main x86.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\fdfs.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\fdfs.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fdfsw.cpp.txt||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\fdfsw.cpp.txt||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\asmtools.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\asmtools.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\out\\NULL.img||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:out\\NULL.img||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\out\\log.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:out\\log.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\linker_x86.ld||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\linker_x86.ld||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\arith64\\Source\\arith64.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\arith64\\Source\\arith64.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\keyboard.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\keyboard.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\keyboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\keyboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\porter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\porter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\console.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\console.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\data_size.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\data_size.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\gdt.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\gdt.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\grub.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\grub.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\idt.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\idt.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\idt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\idt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\gdt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\gdt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\pic_manager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\pic_manager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\pic_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\pic_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\deque.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\deque.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\paging64.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\paging64.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\asmtools.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\asmtools.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\pci.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\pci.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\console.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\console.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x64\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x64\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\porter.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\porter.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\fs.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\fs.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\fs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\MYOS||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\MYOS||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\debug.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\debug.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\defines.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\defines.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\usb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\usb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\floppy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\floppy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\system.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Header\\system.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\disk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\disk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\pci.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\pci.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\system.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\system.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\deque.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x86\\library\\MYOS\\Source\\deque.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x64\\main x64.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:x64\\main x64.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "fdfsw.cpp.txt",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fdfsw.cpp.txt",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\fdfsw.cpp.txt",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fdfsw.cpp.txt",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\fdfsw.cpp.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-07T15:38:03.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "log.txt",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\out\\log.txt",
+              "RelativeDocumentMoniker": "out\\log.txt",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\out\\log.txt",
+              "RelativeToolTip": "out\\log.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-07T14:49:12.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NULL.img",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\out\\NULL.img",
+              "RelativeDocumentMoniker": "out\\NULL.img",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\out\\NULL.img",
+              "RelativeToolTip": "out\\NULL.img",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAITSURBVDhPbVPdThNREP6wi02lCiGlMYb0ShOL0VQu8Qq9gfok8BAYn0CNeiMXmEr7Cr2gRnmB1pvuJZIYrZTSP0y7Z7u7x5nZH9a4X/Jlzp6ZM2fmO7NzCFCtVrWnNbTnQZP1PFprD\u002BEeWyOVGirb3tzd2fkmhzgwxKfDQ\u002B26bkSH6VyxVqtp0zT1h/39wdt370vBMVwLrNzCcMm6LtMVUiIhI5fL4cnGxpJhGF9kg3CVIKyGDBXtryP435VKBfV6HcpWS7IRx8HBRymdevSpbG1FVNqylJ4SZzNHv3r9JrohVgGJF6yVpdBsNXH0uYGjRgOtZguUJPCCBPXbZUQJWGXOwIePj79ieSWPB\u002BvruPvoIZDJSDKlLIml5xLL\u002BE/EdruNe8UiCqur0LYNezJB9tZN3C4UYLZNiYm/3r8VEM57PcwZBn52fuHHyQkGnQ5mkykWFrLoko/hBZcxYhVwAhog6m80vsRwNPIdBJv6d6gaupq\u002BeMASK/BFzFPvF90uSHFMHXp/qmZ5cRGjfp98OYlJFDHMukb9D3vnOOv8Bk0gLMvG99NTjPsXuF9ck5hEEXn2Of31dBpbW9u4k1\u002BB9WeMy\u002BEA2RsZbD59hjT5JDapBZ6DEBxYKpVQLj8nlmn9ODrMiMfGNOABpj/OSPmcNzCfQImNtRD9zjyeIiQ5WQ9\u002BKrHBnlxAa/8313j5Yo/OAn8BP0x5\u002BmPVrpQAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-10-07T14:48:58.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "commands.txt",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\commands.txt",
+              "RelativeDocumentMoniker": "commands.txt",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\commands.txt",
+              "RelativeToolTip": "commands.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-07T14:45:28.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "linker_x86.ld",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\linker_x86.ld",
+              "RelativeDocumentMoniker": "x86\\linker_x86.ld",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\linker_x86.ld",
+              "RelativeToolTip": "x86\\linker_x86.ld",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-07T14:44:57.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "arith64.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\arith64\\Source\\arith64.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\arith64\\Source\\arith64.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\arith64\\Source\\arith64.cpp",
+              "RelativeToolTip": "x86\\library\\arith64\\Source\\arith64.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T14:44:44.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "asmtools.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\asmtools.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\asmtools.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\asmtools.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\asmtools.hpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAiwJIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T14:33:23.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "keyboard.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\keyboard.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\keyboard.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\keyboard.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\keyboard.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:46:11.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "x86\\CMakeLists.txt",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\CMakeLists.txt",
+              "RelativeToolTip": "x86\\CMakeLists.txt",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA0AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-07T11:16:51.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "CMakeLists.txt",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\CMakeLists.txt",
+              "RelativeToolTip": "CMakeLists.txt",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-07T12:14:59.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fdfs.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fdfs.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\fdfs.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fdfs.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\fdfs.cpp",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T13:05:49.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "fdfs.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\fdfs.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\fdfs.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\fdfs.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\fdfs.hpp",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAFgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T13:06:33.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main x86.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\main x86.cpp",
+              "RelativeDocumentMoniker": "x86\\main x86.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\main x86.cpp",
+              "RelativeToolTip": "x86\\main x86.cpp",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAJMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-30T15:45:22.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "console.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\console.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\console.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\console.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\console.hpp",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T14:38:29.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "data_size.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\data_size.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\data_size.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\data_size.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\data_size.hpp",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T14:38:26.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "gdt.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\gdt.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\gdt.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\gdt.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\gdt.hpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T14:36:11.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "pic_manager.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\pic_manager.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\pic_manager.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\pic_manager.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\pic_manager.hpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T06:08:42.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "pic_manager.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\pic_manager.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\pic_manager.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\pic_manager.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\pic_manager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:45:10.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "deque.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\deque.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\deque.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\deque.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\deque.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T07:41:16.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "porter.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\porter.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\porter.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\porter.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\porter.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T11:16:49.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "paging64.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\paging64.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\paging64.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\paging64.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\paging64.hpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T11:05:13.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "keyboard.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\keyboard.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\keyboard.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\keyboard.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\keyboard.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T05:54:36.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "asmtools.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\asmtools.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\asmtools.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\asmtools.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\asmtools.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T14:33:38.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "pci.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\pci.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\pci.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\pci.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\pci.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T07:56:05.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "console.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\console.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\console.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\console.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\console.cpp",
+              "ViewState": "AgIAAEYAAAAAAAAAAAASwFIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:05:38.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "gdt.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\gdt.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\gdt.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\gdt.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\gdt.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:29:55.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "idt.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\idt.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\idt.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\idt.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\idt.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T05:26:40.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "idt.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\idt.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\idt.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\idt.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\idt.hpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAADoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T05:28:45.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "grub.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\grub.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\grub.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\grub.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\grub.hpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T06:12:15.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x64\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "x64\\CMakeLists.txt",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x64\\CMakeLists.txt",
+              "RelativeToolTip": "x64\\CMakeLists.txt",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-07T12:24:37.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "porter.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\porter.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\porter.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\porter.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\porter.hpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T11:06:19.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "fs.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\fs.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\fs.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\fs.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\fs.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T09:28:04.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "fs.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fs.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\fs.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\fs.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\fs.cpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAIYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T08:54:04.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MYOS",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\MYOS",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\MYOS",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\MYOS",
+              "RelativeToolTip": "x86\\library\\MYOS\\MYOS",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-07T07:30:02.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "debug.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\debug.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\debug.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\debug.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\debug.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T11:05:49.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "defines.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\defines.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\defines.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\defines.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\defines.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T11:05:44.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "usb.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\usb.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\usb.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\usb.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\usb.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T08:04:53.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "floppy.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\floppy.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\floppy.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\floppy.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\floppy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T08:03:08.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "disk.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\disk.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\disk.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\disk.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\disk.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T08:02:03.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "pci.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\pci.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\pci.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\pci.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\pci.cpp",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T08:00:12.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "system.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\system.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\system.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\system.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\system.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:32:40.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "debug.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\debug.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\debug.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\debug.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\debug.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:29:52.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "system.hpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\system.hpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Header\\system.hpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Header\\system.hpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Header\\system.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T07:32:28.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "deque.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\deque.cpp",
+              "RelativeDocumentMoniker": "x86\\library\\MYOS\\Source\\deque.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x86\\library\\MYOS\\Source\\deque.cpp",
+              "RelativeToolTip": "x86\\library\\MYOS\\Source\\deque.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T07:29:47.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "main x64.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x64\\main x64.cpp",
+              "RelativeDocumentMoniker": "x64\\main x64.cpp",
+              "ToolTip": "C:\\Users\\\uC784\uD0DC\uC591 \uBE0C\uB85C\uCF5C\uB9AC\uD68C \uBD80\uD68C\uC7A5\\Documents\\MYOS ch.3\\x64\\main x64.cpp",
+              "RelativeToolTip": "x64\\main x64.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T06:16:30.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 504,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
