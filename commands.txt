@@ -1,0 +1,12 @@
+sudo apt update
+sudo apt upgrade
+
+sudo apt-get install grub2
+sudo apt-get install qemu-system
+sudo apt-get install g++
+sudo apt-get install cmake
+sudo apt-get install ninja-build
+sudo apt-get install xorriso
+sudo apt install gnu-efi
+sudo apt install ovmf
+sudo apt install gdbgui

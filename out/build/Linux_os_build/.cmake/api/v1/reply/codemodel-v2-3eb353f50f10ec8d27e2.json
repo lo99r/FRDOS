@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MYOS Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ISO_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ISO_BUILD-19e02330bdcd745d9b57.json",
+					"name" : "ISO_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MYOS_Project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MYOS_Project-c3303de77f7e54d5bcc7.json",
+					"name" : "MYOS_Project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RUN::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RUN-895c718bd449d9572605.json",
+					"name" : "RUN",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kernel_elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kernel_elf-dbc4f537f4b3dc9005ea.json",
+					"name" : "kernel_elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/MYOS ch.2/out/build/Linux_os_build",
+		"source" : "D:/MYOS ch.2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

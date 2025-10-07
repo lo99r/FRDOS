@@ -1,0 +1,21 @@
+#pragma once
+
+#include "Header/asmtools.hpp"
+#include "Header/console.hpp"
+#include "Header/data_size.hpp"
+#include "Header/debug.hpp"
+#include "Header/defines.hpp"
+#include "Header/deque.hpp"
+#include "Header/gdt.hpp"
+#include "Header/grub.hpp"
+#include "Header/idt.hpp"
+#include "Header/keyboard.hpp"
+#include "Header/paging64.hpp"
+#include "Header/pic_manager.hpp"
+#include "Header/stdfunc.hpp"
+#include "Header/system.hpp"
+#include "Header/pci.hpp"
+//
+#include "Header/porter.hpp"
+//#include "Header/fs.hpp"
+#include "Header/fdfs.hpp"

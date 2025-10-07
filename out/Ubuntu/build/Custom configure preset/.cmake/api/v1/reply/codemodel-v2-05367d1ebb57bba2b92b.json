@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MYOS Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ISO_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ISO_BUILD-Debug-d43097f151d6071b009a.json",
+					"name" : "ISO_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MYOS_Project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MYOS_Project-Debug-de7d8cf8d3276570853c.json",
+					"name" : "MYOS_Project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kernel_elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kernel_elf-Debug-d69abd4a7f278b992b6e.json",
+					"name" : "kernel_elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ierwa/.vs/MYOS Project/out/build/Custom configure preset",
+		"source" : "/home/ierwa/.vs/MYOS Project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

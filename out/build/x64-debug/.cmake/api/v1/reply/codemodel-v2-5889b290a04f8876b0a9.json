@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MYOS Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ISO_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ISO_BUILD-Debug-cbe2ec79ba7039324dff.json",
+					"name" : "ISO_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MYOS_Project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MYOS_Project-Debug-995ba40d15849cca261e.json",
+					"name" : "MYOS_Project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kernel_elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kernel_elf-Debug-69b8658d2375711e559b.json",
+					"name" : "kernel_elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/MYOS Project/MYOS Project/out/build/x64-debug",
+		"source" : "D:/MYOS Project/MYOS Project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

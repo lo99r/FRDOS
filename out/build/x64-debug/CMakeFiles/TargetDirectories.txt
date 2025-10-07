@@ -1,0 +1,5 @@
+D:/MYOS Project/MYOS Project/out/build/x64-debug/CMakeFiles/MYOS_Project.dir
+D:/MYOS Project/MYOS Project/out/build/x64-debug/CMakeFiles/kernel_elf.dir
+D:/MYOS Project/MYOS Project/out/build/x64-debug/CMakeFiles/ISO_BUILD.dir
+D:/MYOS Project/MYOS Project/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/MYOS Project/MYOS Project/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

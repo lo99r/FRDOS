@@ -1,0 +1,243 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/asmtools.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/console.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/debug.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/deque.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/gdt.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/idt.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/keyboard.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/paging64.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/pic_manager.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/MYOS/Source/stdfunc.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./library/arith64/Source/arith64.cpp.o"
+		},
+		{
+			"path" : "x86/CMakeFiles/OBJECTS_x86.dir/./main_x86.cpp.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"x86/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-nostdlib"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-m32"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fpermissive"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fno-common"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/ierwa/.vs/MYOS 3/x86/library/MYOS"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ierwa/.vs/MYOS 3/x86/library/arith64"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"id" : "OBJECTS_x86::@2115084c9915e3c3f582",
+	"name" : "OBJECTS_x86",
+	"paths" : 
+	{
+		"build" : "x86",
+		"source" : "x86"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/asmtools.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/console.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/debug.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/deque.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/gdt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/idt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/keyboard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/paging64.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/pic_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/MYOS/Source/stdfunc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/library/arith64/Source/arith64.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "x86/main x86.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

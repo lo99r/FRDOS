@@ -1,0 +1,30 @@
+{
+  "configurePresets": [
+    {
+      "name": "Linux_os_build",
+      "hidden": false,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc",
+        "CMAKE_CXX_COMPILER": "g++"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    }
+  ],
+
+  "testPresets": [
+    {
+      "name": "testPresets",
+      "displayName": "사용자 지정 테스트 사전 설정",
+      "description": "사용자 지정 테스트 사전 설정 설명",
+      "configurePreset": "Linux_os_build"
+    }
+  ],
+  "version": 3
+}

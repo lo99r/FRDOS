@@ -1,0 +1,6 @@
+D:/MYOS ch.2/out/build/Linux_os_build/CMakeFiles/MYOS_Project.dir
+D:/MYOS ch.2/out/build/Linux_os_build/CMakeFiles/kernel_elf.dir
+D:/MYOS ch.2/out/build/Linux_os_build/CMakeFiles/ISO_BUILD.dir
+D:/MYOS ch.2/out/build/Linux_os_build/CMakeFiles/RUN.dir
+D:/MYOS ch.2/out/build/Linux_os_build/CMakeFiles/edit_cache.dir
+D:/MYOS ch.2/out/build/Linux_os_build/CMakeFiles/rebuild_cache.dir
