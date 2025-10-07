@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "QEMU",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/bin/sh", // 빌드 후 실행할 바이너리 경로
+      "args": ["${workspaceFolder}/run.sh"], // 프로그램 실행 시 인자
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb"
+    }
+  ]
+}
