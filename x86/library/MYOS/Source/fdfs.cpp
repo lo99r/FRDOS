@@ -56,7 +56,7 @@ namespace myos::fdfs {
             return;
         }
         if (!ata_wait_drq()) {
-            console::print("ERROR: ATA DRQ timeout\n");
+            console::print("ERROR: ATA DRQ timeout\n"); //ø©±‚º≠ ∏ÿ√„
             return;
         }
 
