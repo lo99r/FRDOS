@@ -15,7 +15,9 @@ add_custom_target(ISO_BUILD ALL
 )
 
 add_custom_target(RUN ALL
-    COMMAND qemu-system-x86_64 -drive file=${CMAKE_SOURCE_DIR}/out/OS.iso,format=raw,media=cdrom -drive file=${CMAKE_SOURCE_DIR}/out/disk.img,format=raw,if=virtio -D log.txt -d int -m 100M -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0
+    COMMAND qemu-system-x86_64 -drive file=${CMAKE_SOURCE_DIR}/out/OS.iso,format=raw,media=cdrom -drive file=${CMAKE_SOURCE_DIR}/out/disk.img,format=raw,if=ide -D log.txt -d int -m 100M -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0
     DEPENDS ISO_BUILD
     COMMENT "QEMU is Running..."
 )
+
+#virtio, ide

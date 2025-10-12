@@ -205,9 +205,12 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     idt.setHandler(33, input); // 키보드 인터럽트
     idt.load();
 
+    //fdfs::init();//init();/writeBlock
+
     console::clear();
     //console::print("Frame DOS 1.0.0\n\n");
     //console::print("");//""
+    fdfs::init();
     version();
 
     keyboard.enableInterrupt();

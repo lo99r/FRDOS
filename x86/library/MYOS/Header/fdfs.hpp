@@ -129,4 +129,17 @@ namespace myos::fdfs {
     // 파일 위치 이동
     int fseek(FILE* f, long offset, int whence);
 
+    // FAT 블록 번호를 실제 디스크 LBA로 변환
+    uint32_t blockToLBA(uint32_t block);
+
+    // 실제 섹터 읽기
+    void readBlock(uint32_t blockNum, uint8_t* buffer);
+
+    // 실제 섹터 쓰기
+    void writeBlock(uint32_t blockNum, const uint8_t* buffer);
+
+    bool writeFileFixed(const char* name, const uint8_t* data, uint32_t size);
+
+    bool catFixed(const char* name);
+
 } // namespace fdfs

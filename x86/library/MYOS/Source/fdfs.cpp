@@ -12,8 +12,8 @@ namespace myos::console {\
 //\
 a
 
-#define fdfs_readBlock ata_read_sector
-#define fdfs_writeBlock ata_write_sector
+#define fdfs_readBlock readBlock//ata_read_sector
+#define fdfs_writeBlock writeBlock//ata_write_sector
 
 namespace myos::fdfs {
     char currentPath[128] = "/";
@@ -39,8 +39,17 @@ namespace myos::fdfs {
         outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
 
         // 대기 (BSY 해제 + DRQ 설정)
-        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
-        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ));
+        bool ata_wait_ready(uint32_t timeout_ms) {
+            uint32_t t = 0;
+            while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY) {
+                if (t++ > timeout_ms * 1000) return false; // 타임아웃
+            }
+            t = 0;
+            while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ)) {
+                if (t++ > timeout_ms * 1000) return false;
+            }
+            return true;
+        }
 
         // 512바이트 읽기
         for (int i = 0; i < 256; i++) {
@@ -445,6 +454,78 @@ namespace myos::fdfs {
         if (newPos > f->entry->size) return -1;
         f->pos = newPos;
         return 0;
+    }
+
+    // FAT 블록 번호를 실제 디스크 LBA로 변환
+    uint32_t blockToLBA(uint32_t block) {
+        return ROOT_BLOCKS + block; // ROOT_BLOCKS 이후부터 데이터 영역
+    }
+
+    // 실제 섹터 읽기
+    void readBlock(uint32_t blockNum, uint8_t* buffer) {
+        uint32_t lba = blockToLBA(blockNum);
+        ata_read_sector(lba, buffer);
+    }
+
+    // 실제 섹터 쓰기
+    void writeBlock(uint32_t blockNum, const uint8_t* buffer) {
+        uint32_t lba = blockToLBA(blockNum);
+        ata_write_sector(lba, buffer);
+    }
+
+    bool writeFileFixed(const char* name, const uint8_t* data, uint32_t size) {
+        if (findFile(name)) return false;
+        if (currentDirCount >= BLOCK_SIZE / sizeof(FileEntry)) return false;
+
+        FileEntry& f = currentDir[currentDirCount++];
+        strCopy(f.name, name);
+        f.isDirectory = false;
+        f.size = size;
+
+        uint32_t neededBlocks = (size + BLOCK_SIZE - 1) / BLOCK_SIZE;
+        int prevBlock = -1;
+
+        for (uint32_t i = 0; i < neededBlocks; i++) {
+            int b = allocateBlock();
+            if (b == -1) return false;
+
+            if (prevBlock != -1) FAT[prevBlock] = b;
+            else f.firstBlock = b;
+            prevBlock = b;
+
+            uint32_t offset = i * BLOCK_SIZE;
+            uint32_t copySize = (size - offset > BLOCK_SIZE) ? BLOCK_SIZE : (size - offset);
+
+            for (uint32_t j = 0; j < copySize; j++)
+                disk[j] = data[offset + j];
+
+            for (uint32_t j = copySize; j < BLOCK_SIZE; j++)
+                disk[j] = 0;
+
+            writeBlock(b, disk); // 수정: block → 실제 LBA
+        }
+
+        return true;
+    }
+
+    bool catFixed(const char* name) {
+        FileEntry* f = findFile(name);
+        if (!f || f->isDirectory) return false;
+
+        uint32_t b = f->firstBlock;
+        uint32_t remaining = f->size;
+
+        while (b != END_BLOCK && remaining > 0) {
+            uint32_t chunk = (remaining > BLOCK_SIZE) ? BLOCK_SIZE : remaining;
+            readBlock(b, disk); // 수정: block → 실제 LBA
+            for (uint32_t i = 0; i < chunk; i++)
+                console::print(disk[i]); // console::printChar 사용
+            remaining -= chunk;
+            b = FAT[b];
+        }
+
+        console::print("\n");
+        return true;
     }
 
 } // namespace fdfs
