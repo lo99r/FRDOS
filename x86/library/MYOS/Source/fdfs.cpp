@@ -81,8 +81,14 @@ namespace myos::fdfs {
         outb(ATA_PRIMARY_IO + ATA_REG_LBA2, (uint8_t)(lba >> 16));
         outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_WRITE_PIO);
 
-        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
-        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ));
+        if (!ata_wait_not_busy()) {
+            console::print("ERROR: ATA BSY timeout\n");
+            return;
+        }
+        if (!ata_wait_drq()) {
+            console::print("ERROR: ATA DRQ timeout\n"); //ø©±‚º≠ ∏ÿ√„
+            return;
+        }
 
         for (int i = 0; i < 256; i++) {
             uint16_t data = buffer[i * 2] | (buffer[i * 2 + 1] << 8);
