@@ -39,17 +39,8 @@ namespace myos::fdfs {
         outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
 
         // 대기 (BSY 해제 + DRQ 설정)
-        bool ata_wait_ready(uint32_t timeout_ms) {
-            uint32_t t = 0;
-            while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY) {
-                if (t++ > timeout_ms * 1000) return false; // 타임아웃
-            }
-            t = 0;
-            while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ)) {
-                if (t++ > timeout_ms * 1000) return false;
-            }
-            return true;
-        }
+        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
+        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ));
 
         // 512바이트 읽기
         for (int i = 0; i < 256; i++) {
