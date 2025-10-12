@@ -47,6 +47,10 @@ namespace myos::fdfs {
 #define ATA_SR_DRDY 0x40
 #define ATA_SR_DRQ  0x08
 
+    bool ata_wait_not_busy();
+
+    bool ata_wait_drq();
+
     // 디스크에서 1섹터(512B) 읽기
     void ata_read_sector(uint32_t lba, uint8_t* buffer);
 

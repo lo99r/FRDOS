@@ -28,6 +28,18 @@ namespace myos::fdfs {
     uint32_t FAT[MAX_BLOCKS];
     uint8_t disk[BLOCK_SIZE];
     
+    bool ata_wait_not_busy() {
+        int timeout = 1000000;
+        while ((inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY) && --timeout);
+        return timeout > 0;
+    }
+
+    bool ata_wait_drq() {
+        int timeout = 1000000;
+        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ) && --timeout);
+        return timeout > 0;
+    }
+
     // 디스크에서 1섹터(512B) 읽기
     void ata_read_sector(uint32_t lba, uint8_t* buffer) {
         // 드라이브 선택 (LBA mode)
@@ -39,8 +51,14 @@ namespace myos::fdfs {
         outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
 
         // 대기 (BSY 해제 + DRQ 설정)
-        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
-        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ));
+        if (!ata_wait_not_busy()) {
+            console::print("ERROR: ATA BSY timeout\n");
+            return;
+        }
+        if (!ata_wait_drq()) {
+            console::print("ERROR: ATA DRQ timeout\n");
+            return;
+        }
 
         // 512바이트 읽기
         for (int i = 0; i < 256; i++) {
