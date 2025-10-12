@@ -127,9 +127,6 @@
 			"path" : "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "x64/CMakeLists.txt"
-		},
-		{
 			"path" : "x86/CMakeLists.txt"
 		}
 	],

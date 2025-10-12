@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.8)
 
-add_subdirectory(x64)
+#add_subdirectory(x64)
 add_subdirectory(x86)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-exceptions -fno-rtti")
 
@@ -10,7 +10,7 @@ add_custom_target(ISO_BUILD ALL
     COMMAND grub-mkrescue -o ${CMAKE_SOURCE_DIR}/out/OS.iso "${CMAKE_SOURCE_DIR}/iso"
 
     DEPENDS kernel_x86_bin
-    DEPENDS kernel_x64_bin
+    #DEPENDS kernel_x64_bin
 )
 
 add_custom_target(RUN ALL

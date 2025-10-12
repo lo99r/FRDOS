@@ -58,13 +58,20 @@ void panic() {
 }
 
 void version() {
-    console::print("Frame DOS 1.0.3\nMONIKAS STOUDIAS FRAME DOS\n\
-(C) Monikas Stoudias FuchsuaProject 2022, 2023, 2025");
+    console::print("Frame DOS 1.0.4\nMONIKAS STOUDIAS FRAME DOS\n\
+(C) Monikas Stoudias FuchsuaProject 2022, 2023, 2024, 2025");
 }
+
+bool shift = false;
 
 void input() {
     Key key = keyboard.readKey();
     if (!key.isKeyDown()) return;
+
+    if (key.scancode() == Scancode::LEFT_SHIFT || key.scancode() == Scancode::RIGHT_SHIFT) {
+        if (key.isKeyDown()) shift = true;
+        else shift = false;
+    }
 
     char c = key.chr();
 
@@ -145,7 +152,10 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
 \n1.0.2\n\
 - fix\n\
 \n1.0.3\n\
-- Kaupiyees Riipht\
+- Kaupiyees Riipht\n\
+\n1.0.4\n\
+- Hardes Disk\n\
+- Kaupiyees Riipht\n\
 ");
                 }
             }
@@ -166,16 +176,21 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
     }
 
     if (keycount < 31) {
-        if (c != '\b') {
-            keybuffer[keycount++] = c;
-            console::print(c);
-        }
-        else {
+        if (c == '\b') {
             if(keycount != 0){
                 keycount--;
                 //ujiasdhuif vuyhidseahfuiohweruiorhuiewhjfuji nvm
                 console::print(c);
             }
+        }
+        if (shift) { //c == 0x2a || c == 0x36
+            keybuffer[keycount++] = shiftChar(c);
+            console::print(shiftChar(c));
+        }
+        else {
+            keybuffer[keycount++] = c;
+            console::print(c);
+            //
         }
     }
 }

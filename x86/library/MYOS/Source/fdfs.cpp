@@ -9,6 +9,11 @@ namespace myos::console {\
     static void print(const char* str);
     //static void printChar(char c);\
 }
+//\
+a
+
+#define fdfs_readBlock ata_read_sector
+#define fdfs_writeBlock ata_write_sector
 
 namespace myos::fdfs {
     char currentPath[128] = "/";
@@ -21,7 +26,49 @@ namespace myos::fdfs {
     FileEntry* currentDir = rootDir;
     uint32_t currentDirCount = 0;
     uint32_t FAT[MAX_BLOCKS];
-    uint8_t disk[MAX_BLOCKS][BLOCK_SIZE];
+    uint8_t disk[BLOCK_SIZE];
+    
+    // 디스크에서 1섹터(512B) 읽기
+    void ata_read_sector(uint32_t lba, uint8_t* buffer) {
+        // 드라이브 선택 (LBA mode)
+        outb(ATA_PRIMARY_IO + ATA_REG_HDDEVSEL, 0xE0 | ((lba >> 24) & 0x0F));
+        outb(ATA_PRIMARY_IO + ATA_REG_SECCOUNT0, 1);
+        outb(ATA_PRIMARY_IO + ATA_REG_LBA0, (uint8_t)lba);
+        outb(ATA_PRIMARY_IO + ATA_REG_LBA1, (uint8_t)(lba >> 8));
+        outb(ATA_PRIMARY_IO + ATA_REG_LBA2, (uint8_t)(lba >> 16));
+        outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
+
+        // 대기 (BSY 해제 + DRQ 설정)
+        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
+        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ));
+
+        // 512바이트 읽기
+        for (int i = 0; i < 256; i++) {
+            uint16_t data = inw(ATA_PRIMARY_IO + ATA_REG_DATA);
+            buffer[i * 2] = (uint8_t)data;
+            buffer[i * 2 + 1] = (uint8_t)(data >> 8);
+        }
+    }
+
+    // 디스크에 1섹터(512B) 쓰기
+    void ata_write_sector(uint32_t lba, const uint8_t* buffer) {
+        outb(ATA_PRIMARY_IO + ATA_REG_HDDEVSEL, 0xE0 | ((lba >> 24) & 0x0F));
+        outb(ATA_PRIMARY_IO + ATA_REG_SECCOUNT0, 1);
+        outb(ATA_PRIMARY_IO + ATA_REG_LBA0, (uint8_t)lba);
+        outb(ATA_PRIMARY_IO + ATA_REG_LBA1, (uint8_t)(lba >> 8));
+        outb(ATA_PRIMARY_IO + ATA_REG_LBA2, (uint8_t)(lba >> 16));
+        outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_WRITE_PIO);
+
+        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
+        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRQ));
+
+        for (int i = 0; i < 256; i++) {
+            uint16_t data = buffer[i * 2] | (buffer[i * 2 + 1] << 8);
+            outw(ATA_PRIMARY_IO + ATA_REG_DATA, data);
+        }
+
+        outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, 0xE7); // flush
+    }
 
     // 현재 디렉터리 변경
     bool cd(const char* name) {
@@ -119,7 +166,10 @@ namespace myos::fdfs {
     void init() {
         for (uint32_t i = 0; i < MAX_BLOCKS; i++) FAT[i] = 0;
         for (uint32_t i = 0; i < ROOT_BLOCKS; i++) {
-            for (uint32_t j = 0; j < BLOCK_SIZE; j++) disk[i][j] = 0;
+            for (uint32_t j = 0; j < BLOCK_SIZE; j++) {
+                fdfs_readBlock(i, disk);
+                disk[j] = 0;
+            }
         }
         rootDirCount = 0;
         currentDir = rootDir;
@@ -174,7 +224,16 @@ namespace myos::fdfs {
 
             uint32_t offset = i * BLOCK_SIZE;
             uint32_t copySize = (size - offset > BLOCK_SIZE) ? BLOCK_SIZE : (size - offset);
-            memCopy(disk[b], data + offset, copySize);
+            // 버퍼 채우기
+            for (uint32_t j = 0; j < copySize; j++)
+                disk[j] = data[offset + j];
+
+            // 남은 부분 0으로 채움 (섹터 크기보다 작을 때)
+            for (uint32_t j = copySize; j < BLOCK_SIZE; j++)
+                disk[j] = 0;
+
+            // 실제 디스크에 기록
+            ata_write_sector(b, disk);
         }
 
         return true;
@@ -189,8 +248,10 @@ namespace myos::fdfs {
 
         while (b != END_BLOCK && remaining > 0) {
             uint32_t chunk = (remaining > BLOCK_SIZE) ? BLOCK_SIZE : remaining;
-            for (uint32_t i = 0; i < chunk; i++)
-                console::print(disk[b][i]); // console::printChar 사용
+            for (uint32_t i = 0; i < chunk; i++){
+                fdfs_readBlock(b, disk);
+                console::print(disk[i]); // console::printChar 사용
+            }
             remaining -= chunk;
             b = FAT[b];
         }
@@ -250,8 +311,10 @@ namespace myos::fdfs {
         uint32_t b = src->firstBlock;
         while (b != END_BLOCK && copied < src->size) {
             uint32_t chunk = (src->size - copied > BLOCK_SIZE) ? BLOCK_SIZE : (src->size - copied);
-            for (uint32_t i = 0; i < chunk; i++)
-                buffer[copied + i] = disk[b][i];
+            for (uint32_t i = 0; i < chunk; i++) {
+                fdfs_readBlock(b, disk);
+                buffer[copied + i] = disk[i];
+            }
             copied += chunk;
             b = FAT[b];
         }
@@ -316,7 +379,8 @@ namespace myos::fdfs {
 
         while (copied < total && block != END_BLOCK) {
             uint32_t chunk = (total - copied > BLOCK_SIZE - posInBlock) ? BLOCK_SIZE - posInBlock : total - copied;
-            memCopy(out + copied, disk[block] + posInBlock, chunk);
+            fdfs_readBlock(block, disk);
+            memCopy(out + copied, disk + posInBlock, chunk);
             copied += chunk;
             posInBlock = 0;
             block = FAT[block];
@@ -356,7 +420,8 @@ namespace myos::fdfs {
                 FAT[prevBlock] = block;
             }
             uint32_t chunk = (total - written > BLOCK_SIZE - posInBlock) ? BLOCK_SIZE - posInBlock : total - written;
-            memCopy(disk[block] + posInBlock, in + written, chunk);
+            fdfs_readBlock(block, disk);
+            memCopy(disk + posInBlock, in + written, chunk);
             written += chunk;
             posInBlock = 0;
             prevBlock = block;
