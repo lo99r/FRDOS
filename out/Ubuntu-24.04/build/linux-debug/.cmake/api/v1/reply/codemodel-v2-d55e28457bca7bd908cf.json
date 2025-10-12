@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -20,7 +21,24 @@
 					"targetIndexes" : 
 					[
 						0,
-						2
+						3
+					]
+				},
+				{
+					"build" : "x64",
+					"jsonFile" : "directory-x64-Debug-aebb3c4516e60157f101.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "x64",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						5
 					]
 				},
 				{
@@ -35,9 +53,9 @@
 					"source" : "x86",
 					"targetIndexes" : 
 					[
-						1,
-						3,
-						4
+						2,
+						6,
+						7
 					]
 				}
 			],
@@ -48,7 +66,8 @@
 					"directoryIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					],
 					"name" : "Project",
 					"targetIndexes" : 
@@ -57,7 +76,10 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6,
+						7
 					]
 				}
 			],
@@ -66,12 +88,19 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ISO_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ISO_BUILD-Debug-3c7b0478deb760e5a3d7.json",
+					"jsonFile" : "target-ISO_BUILD-Debug-54e63e42ac3bb7f3f889.json",
 					"name" : "ISO_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
+					"id" : "OBJECTS_x64::@0db4dc19d5bed3228ed5",
+					"jsonFile" : "target-OBJECTS_x64-Debug-9ff4097e670be02a91c1.json",
+					"name" : "OBJECTS_x64",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
 					"id" : "OBJECTS_x86::@2115084c9915e3c3f582",
 					"jsonFile" : "target-OBJECTS_x86-Debug-a5948558f51f4a2d8a39.json",
 					"name" : "OBJECTS_x86",
@@ -80,19 +109,33 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RUN::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RUN-Debug-8e03dee086113c81ea61.json",
+					"jsonFile" : "target-RUN-Debug-f1b62d9b569edfc22956.json",
 					"name" : "RUN",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
+					"id" : "kernel_x64::@0db4dc19d5bed3228ed5",
+					"jsonFile" : "target-kernel_x64-Debug-ad2f3a9c6db6cb5ce56a.json",
+					"name" : "kernel_x64",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "kernel_x64_bin::@0db4dc19d5bed3228ed5",
+					"jsonFile" : "target-kernel_x64_bin-Debug-5e9378b9ca37b09dfc43.json",
+					"name" : "kernel_x64_bin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
 					"id" : "kernel_x86::@2115084c9915e3c3f582",
 					"jsonFile" : "target-kernel_x86-Debug-d126e17ab6c00c1e1582.json",
 					"name" : "kernel_x86",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 1,
+					"directoryIndex" : 2,
 					"id" : "kernel_x86_bin::@2115084c9915e3c3f582",
 					"jsonFile" : "target-kernel_x86_bin-Debug-6b55591bdc64f69c3b58.json",
 					"name" : "kernel_x86_bin",

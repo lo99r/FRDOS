@@ -21,9 +21,9 @@ inline uint8 inb(uint16 port) {
     return ret;
 }
 
-inline uint16_t inw(uint16_t port) {
+inline uint16 inw(uint16 port) {
     uint16 ret;
-    asm volatile ("inw %1, %0" : "=a"(ret) : "ND"(port))
+    asm volatile ("inw %1, %0" : "=a"(ret) : "Nd"(port))
         ;
     return ret;
 }
@@ -34,7 +34,21 @@ inline void outb(uint16 port, uint8 val) {
 
 
 inline void outw(uint16 port, uint16 val) {
-    asm volatile ("outb %0, %1" : : "a"(val), "Nd"(port));
+    asm volatile ("outw %0, %1" : : "a"(val), "Nd"(port));
+}
+
+inline uint32 inl(uint16 port) {
+    uint32 ret;
+    asm volatile("inl %1, %0" : "=a"(ret) : "Nd"(port));
+    return ret;
+}
+
+inline void outl(uint16 port, uint32 val) {
+    asm volatile("outl %0, %1" : : "a"(val), "Nd"(port));
+}
+
+static inline void io_wait() {
+    asm volatile("outb %%al, $0x80" : : "a"(0));
 }
 
 namespace myos::system {
