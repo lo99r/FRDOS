@@ -44,6 +44,10 @@ namespace myos::fdfs {
     void ata_read_sector(uint32_t lba, uint8_t* buffer) {
         // 드라이브 선택 (LBA mode)
         outb(ATA_PRIMARY_IO + ATA_REG_HDDEVSEL, 0xE0 | ((lba >> 24) & 0x0F));
+        outb(0x80, 0);//\l
+        outb(0x80, 0);
+        outb(0x80, 0);//b<<i
+        outb(0x80, 0);
         outb(ATA_PRIMARY_IO + ATA_REG_SECCOUNT0, 1);
         outb(ATA_PRIMARY_IO + ATA_REG_LBA0, (uint8_t)lba);
         outb(ATA_PRIMARY_IO + ATA_REG_LBA1, (uint8_t)(lba >> 8));
@@ -182,11 +186,15 @@ namespace myos::fdfs {
     }
 
     void init() {
-        for (uint32_t i = 0; i < MAX_BLOCKS; i++) FAT[i] = 0;
+        for (uint32_t i = 0; i < MAX_BLOCKS; i++) FAT[i] = 0;//{new(0})
+        for (uint32_t i = 0; i < ROOT_BLOCKS; i++) {
+            for (uint32_t j = 0; j < BLOCK_SIZE; j++) disk[j] = 0;
+            writeBlock(i, disk); // 실제 디스크에 0 기록
+        }
         for (uint32_t i = 0; i < ROOT_BLOCKS; i++) {
             for (uint32_t j = 0; j < BLOCK_SIZE; j++) {
                 fdfs_readBlock(i, disk);
-                disk[j] = 0;
+                //disk[j] = 0;
             }
         }
         rootDirCount = 0;
