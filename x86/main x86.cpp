@@ -62,16 +62,14 @@ void version() {
 (C) Monikas Stoudias FuchsuaProject 2022, 2023, 2024, 2025");
 }
 
-bool shift = false;
+bool shift = false;//''
+bool waiten = false;
 
 void input() {
     Key key = keyboard.readKey();
     if (!key.isKeyDown()) return;
 
-    if (key.scancode() == Scancode::LEFT_SHIFT || key.scancode() == Scancode::RIGHT_SHIFT) {
-        if (key.isKeyDown()) shift = true;
-        else shift = false;
-    }
+    
 
     char c = key.chr();
 
@@ -175,7 +173,15 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
         return;
     }
 
-    if (keycount < 31) {
+    if (key.scancode() == Scancode::LEFT_SHIFT || key.scancode() == Scancode::RIGHT_SHIFT) {
+        if (key.isKeyDown()) shift = true;
+        //else if (key.isKeyUp()) shift = false;//u
+        else shift = false;
+        //return;//
+    }
+    //else ////
+
+    if (keycount < 31) {//) && key.isKeyDown()
         if (c == '\b') {
             if(keycount != 0){
                 keycount--;
@@ -183,13 +189,16 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
                 console::print(c);
             }
         }
-        if (shift) { //c == 0x2a || c == 0x36
+        else if (waiten) { //c == 0x2a || c == 0x36
             keybuffer[keycount++] = shiftChar(c);
             console::print(shiftChar(c));
+            waiten = false;//
         }
         else {
-            keybuffer[keycount++] = c;
-            console::print(c);
+            if(!shift){//s
+                keybuffer[keycount++] = c;
+                console::print(c);
+            }
             //
         }
     }
@@ -204,6 +213,16 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     idt.setHandler(8, panic);
     idt.setHandler(33, input); // 키보드 인터럽트
     idt.load();
+    outb(0x3D4, 0x0A);
+    outb(0x3D5, 0x00);
+    outb(0x3D4, 0x0B);
+    outb(0x3D5, 0x0F);
+
+    uint16_t posss = 0;
+    outb(0x3D4, 0x0F);
+    outb(0x3D5, posss & 0xFF);
+    outb(0x3D4, 0x0E);
+    outb(0x3D5, (posss >> 8) & 0xFF);
 
     //fdfs::init();//init();/writeBlock
 

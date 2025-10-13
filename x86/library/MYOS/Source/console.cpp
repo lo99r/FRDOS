@@ -32,7 +32,7 @@ namespace myos::console {
         if (cur_x > 0) cur_x--;
         print(' ', cur_y, cur_x);
     }
-
+    uint16_t posst = 0;
     void print(char chr) {
         if (chr == '\n') {
             cur_y++;
@@ -73,6 +73,11 @@ namespace myos::console {
                 }
             }
         }
+        posst = (cur_y * 80) + cur_x;
+        outb(0x3D4, 0x0F);
+        outb(0x3D5, posst & 0xFF);
+        outb(0x3D4, 0x0E);
+        outb(0x3D5, (posst >> 8) & 0xFF);
     }
 
 

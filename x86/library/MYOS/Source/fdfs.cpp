@@ -192,20 +192,34 @@ namespace myos::fdfs {
     }
 
     void init() {
+        uint8_t buffer[BLOCK_SIZE];
+        readBlock(0, buffer);
+
+        // 디스크의 첫 섹터에 "MYFS" 시그니처가 있으면 기존 파일시스템 유지
+        if (buffer[0] == 'M' && buffer[1] == 'Y' && buffer[2] == 'F' && buffer[3] == 'S') {
+            console::print("[fdfs] Existing filesystem detected.\n");
+            // 루트 디렉터리 로드
+            readBlock(1, reinterpret_cast<uint8_t*>(rootDir));
+            rootDirCount = buffer[4]; // 루트 엔트리 개수 저장해둔 경우
+            return;
+        }
+
+        console::print("[fdfs] Formatting new disk...\n");
+
         for (uint32_t i = 0; i < MAX_BLOCKS; i++) FAT[i] = 0;//{new(0})
         for (uint32_t i = 0; i < ROOT_BLOCKS; i++) {
             for (uint32_t j = 0; j < BLOCK_SIZE; j++) disk[j] = 0;
             writeBlock(i, disk); // 실제 디스크에 0 기록
         }
-        for (uint32_t i = 0; i < ROOT_BLOCKS; i++) {
-            for (uint32_t j = 0; j < BLOCK_SIZE; j++) {
-                fdfs_readBlock(i, disk);
-                //disk[j] = 0;
-            }
-        }
         rootDirCount = 0;
         currentDir = rootDir;
         currentDirCount = 0;
+
+        // 시그니처 기록
+        buffer[0] = 'M'; buffer[1] = 'Y'; buffer[2] = 'F'; buffer[3] = 'S';
+        buffer[4] = 0; // rootDirCount (저장용)
+        for (uint32_t i = 5; i < BLOCK_SIZE; i++) buffer[i] = 0;
+        writeBlock(0, buffer);
     }
 
     int allocateBlock() {
