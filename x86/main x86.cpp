@@ -193,15 +193,65 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
             keybuffer[keycount++] = shiftChar(c);
             console::print(shiftChar(c));
             waiten = false;//
+            shift = false;
         }
         else {
             if(!shift){//s
                 keybuffer[keycount++] = c;
                 console::print(c);
             }
+            else {
+                waiten = true;//
+            }
             //
         }
     }
+}
+
+bool anm = true;
+
+void pausee() {
+    Key key = keyboard.readKey();
+    if (!key.isKeyDown()) return;
+
+
+
+    char c = key.chr();
+
+    if (key.scancode() == Scancode::LEFT_SHIFT || key.scancode() == Scancode::RIGHT_SHIFT) {
+        if (key.isKeyDown()) shift = true;
+        //else if (key.isKeyUp()) shift = false;//u
+        else shift = false;
+        //return;//
+    }
+    //else ////
+
+    if (keycount < 31) {//) && key.isKeyDown()
+        if (c == '\b') {
+            if (keycount != 0) {
+                keycount--;
+                //ujiasdhuif vuyhidseahfuiohweruiorhuiewhjfuji nvm
+                console::print(c);
+            }
+        }
+        else if (waiten) { //c == 0x2a || c == 0x36
+            keybuffer[keycount++] = shiftChar(c);
+            console::print(shiftChar(c));
+            waiten = false;//
+            shift = false;
+        }
+        else {
+            if (!shift) {//s
+                keybuffer[keycount++] = c;
+                console::print(c);
+            }
+            else {
+                waiten = true;//
+            }
+            //
+        }
+    }
+    keyboard.disableInterrupt();
 }
 
 void Main(uint32 magic_number, GrubBootInfo& boot_info) {
@@ -217,6 +267,20 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     outb(0x3D5, 0x00);
     outb(0x3D4, 0x0B);
     outb(0x3D5, 0x0F);
+
+    uint8_t status = inb(0x1F7);
+    char fff[26];
+    intToStr((uint64)status, fff);
+    console::print(fff);//Hex
+
+    anm = true;
+    idt.setHandler(33, pausee); // 키보드 인터럽트
+    //idt.load();
+    if (anm) {
+        keyboard.enableInterrupt();
+    }
+
+    idt.setHandler(33, input);
 
     uint16_t posss = 0;
     outb(0x3D4, 0x0F);
