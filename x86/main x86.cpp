@@ -154,7 +154,7 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
 \n1.0.3\n\
 - Kaupiyees Riipht\n\
 \n1.0.4\n\
-- Hardes Disk\n\
+- Hardes Disk(kenselehe)\n\
 - Shiftes Keyees\n \
 - Kaupiyees Riipht\n\
 ");
@@ -299,11 +299,6 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     //console::print("Frame DOS 1.0.0\n\n");
     //console::print("");//""
     fdfs::init();
-    outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
-    while (1) {
-        uint8_t status = inb(ATA_PRIMARY_IO + ATA_REG_STATUS);
-        console::printInt(status, 15, 50);
-    }
     version();
 
     keyboard.enableInterrupt();
