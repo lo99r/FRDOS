@@ -191,6 +191,25 @@ namespace myos::fdfs {
         for (uint32_t i = 0; i < size; i++) dest[i] = src[i];
     }
 
+    void saveMetadata() {
+        uint8_t buffer[BLOCK_SIZE];
+        buffer[0] = 'M'; buffer[1] = 'Y'; buffer[2] = 'F'; buffer[3] = 'S';
+        buffer[4] = (uint8_t)rootDirCount;
+        writeBlock(0, buffer);
+        writeBlock(1, reinterpret_cast<uint8_t*>(rootDir));
+        writeBlock(2, reinterpret_cast<uint8_t*>(FAT));
+    }
+
+    void loadMetadata() {
+        uint8_t buffer[BLOCK_SIZE];
+        readBlock(0, buffer);
+        if (buffer[0] == 'M' && buffer[1] == 'Y' && buffer[2] == 'F' && buffer[3] == 'S') {
+            rootDirCount = buffer[4];
+            readBlock(1, reinterpret_cast<uint8_t*>(rootDir));
+            readBlock(2, reinterpret_cast<uint8_t*>(FAT));
+        }
+    }
+
     void init() {
         uint8_t buffer[BLOCK_SIZE];
         readBlock(0, buffer);

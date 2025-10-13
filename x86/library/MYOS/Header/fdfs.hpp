@@ -83,6 +83,10 @@ namespace myos::fdfs {
     // 메모리 복사
     void memCopy(uint8_t* dest, const uint8_t* src, uint32_t size);
 
+    void saveMetadata();
+
+    void loadMetadata();
+
     void init();
 
     int allocateBlock();
