@@ -1,5 +1,7 @@
 ﻿#include <MYOS>
 
+uint8_t status = 0;
+
 DEFAULT_BOOT(0x100000, 0x500000, false);
 
 using namespace myos;
@@ -153,9 +155,13 @@ ver, shutdown, reboot, mkdirj, rmdir, cat, copy, move, pwd, cd\
 - Kaupiyees Riipht\n\
 \n1.0.4\n\
 - Hardes Disk\n\
+- Shiftes Keyees\n \
 - Kaupiyees Riipht\n\
 ");
                 }
+            }
+            else if (strEquals(tokens[0], "infoDisk")) {
+                console::printInt(status, 15, 13);
             }
             else {
                 console::print("Unknown command: ");
@@ -232,6 +238,7 @@ void pausee() {
                 keycount--;
                 //ujiasdhuif vuyhidseahfuiohweruiorhuiewhjfuji nvm
                 console::print(c);
+                anm = false;
             }
         }
         else if (waiten) { //c == 0x2a || c == 0x36
@@ -239,11 +246,13 @@ void pausee() {
             console::print(shiftChar(c));
             waiten = false;//
             shift = false;
+            anm = false;
         }
         else {
             if (!shift) {//s
                 keybuffer[keycount++] = c;
                 console::print(c);
+                anm = false;
             }
             else {
                 waiten = true;//
@@ -251,8 +260,10 @@ void pausee() {
             //
         }
     }
-    keyboard.disableInterrupt();
+    //keyboard.disableInterrupt();
 }
+
+
 
 void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     PIC::initialize();
@@ -268,19 +279,13 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     outb(0x3D4, 0x0B);
     outb(0x3D5, 0x0F);
 
-    uint8_t status = inb(0x1F7);
-    char fff[26];
-    intToStr((uint64)status, fff);
-    console::print(fff);//Hex
+    status = inb(0x1F7);
+    //char fff[26];
+    //intToStr((uint64)status, fff);
+    console::printInt((uint64)status, 15, 4);//Hexfff
 
-    anm = true;
-    idt.setHandler(33, pausee); // 키보드 인터럽트
-    //idt.load();
-    if (anm) {
-        keyboard.enableInterrupt();
-    }
-
-    idt.setHandler(33, input);
+    //anm = true;
+    //while (anm) pausee;
 
     uint16_t posss = 0;
     outb(0x3D4, 0x0F);
@@ -294,6 +299,11 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     //console::print("Frame DOS 1.0.0\n\n");
     //console::print("");//""
     fdfs::init();
+    outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
+    while (1) {
+        uint8_t status = inb(ATA_PRIMARY_IO + ATA_REG_STATUS);
+        console::printInt(status, 15, 50);
+    }
     version();
 
     keyboard.enableInterrupt();
