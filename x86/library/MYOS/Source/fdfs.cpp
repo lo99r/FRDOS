@@ -42,16 +42,25 @@ namespace myos::fdfs {
 
     // 디스크에서 1섹터(512B) 읽기
     void ata_read_sector(uint32_t lba, uint8_t* buffer) {
-        // 드라이브 선택 (LBA mode)
+        // 1. BSY 해제 기다림
+        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
+
+        // 2. LBA 드라이브 선택
         outb(ATA_PRIMARY_IO + ATA_REG_HDDEVSEL, 0xF0 | ((lba >> 24) & 0x0F));
-        for (volatile int i = 0; i < 1000; i++) {} // 간단한 NOP 루프
-        for (volatile int i = 0; i < 1000; i++) {} // 간단한 NOP 루프
-        for (volatile int i = 0; i < 1000; i++) {} // 간단한 NOP 루프
-        for (volatile int i = 0; i < 1000; i++) {} // 간단한 NOP 루프
+
+        // 3. 다시 BSY 해제 대기
+        while (inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_BSY);
+
+        // 4. Drive ready 대기
+        while (!(inb(ATA_PRIMARY_IO + ATA_REG_STATUS) & ATA_SR_DRDY));
+
+        // 5. 섹터 수, LBA 전송
         outb(ATA_PRIMARY_IO + ATA_REG_SECCOUNT0, 1);
         outb(ATA_PRIMARY_IO + ATA_REG_LBA0, (uint8_t)lba);
         outb(ATA_PRIMARY_IO + ATA_REG_LBA1, (uint8_t)(lba >> 8));
         outb(ATA_PRIMARY_IO + ATA_REG_LBA2, (uint8_t)(lba >> 16));
+
+        // 6. READ PIO 명령 전송
         outb(ATA_PRIMARY_IO + ATA_REG_COMMAND, ATA_CMD_READ_PIO);
 
         // 대기 (BSY 해제 + DRQ 설정)

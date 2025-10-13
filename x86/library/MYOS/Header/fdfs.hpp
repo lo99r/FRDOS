@@ -27,8 +27,8 @@ namespace myos::fdfs {
     extern uint32_t FAT[MAX_BLOCKS];
     extern uint8_t disk[BLOCK_SIZE];
 
-#define ATA_PRIMARY_IO  0x1F0
-#define ATA_PRIMARY_CTRL 0x3F6
+#define ATA_PRIMARY_IO  0x170//1F0
+#define ATA_PRIMARY_CTRL 0x376//3F6
 
 #define ATA_REG_DATA      0x00
 #define ATA_REG_ERROR     0x01
