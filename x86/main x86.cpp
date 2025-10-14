@@ -298,7 +298,7 @@ void Main(uint32 magic_number, GrubBootInfo& boot_info) {
     console::clear();
     //console::print("Frame DOS 1.0.0\n\n");
     //console::print("");//""
-    //fdfs::init();
+    //fdfs::init();//dddajsdlkfjlksdjflkjsdlkaaaaa
     version();
 
     keyboard.enableInterrupt();
